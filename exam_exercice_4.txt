@@ -1,0 +1,15 @@
+Selon moi, le tri à bulles est considéré comme très lent car :
+    -tout d'abord, il parcours l'entièreté du tableau, et s'arrête à la première valeur qu'il rencontre.
+    -il va ensuite comparer cette valeur à la suivante, et permuter leurs positions si la suivante est inférieure.
+    -il répète cette action jusqu'à arriver au bout du tableau, auquel cas la plus grande valeur du tableau sera
+     placée à la toute fin de ce dernier.
+    -ensuite, à la deuxième itération, il recommence ces actions en repartant de la première valeur.
+
+Le tri à bulles trie progresivement les valeurs mais il arrête de trier une valeur si cette dernière est inférieure à la suivante.
+Si mon tableau est [5,2,4,7,1], à la fin de la première itération, le tableau deviendra [2,4,5,1,7] : le tri à bulles ne trie
+que la plus grande valeur à chaque itération, faisant de lui un tri lent qui doit parcourir le tableau encore et encore, là où
+d'autre systèmes de tri pourraient effectuer un tri en bien moins de temps et d'efforts, en placant les valeurs d'un tableau
+directement à leur place par exemple, peu importe si elles sont les valeurs les plus grandes.
+
+On peut donc estimer que le tri à bulles met un temps de plus en plus long de manière presque exponentielle selon la taille du
+tableau donné.
